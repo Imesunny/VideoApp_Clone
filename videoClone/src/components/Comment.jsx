@@ -1,4 +1,3 @@
-// Comment.jsx
 import React, { useState } from "react";
 import { VideoType } from "../types/types";
 
@@ -21,7 +20,17 @@ const Comment = ({ video, handleComment }) => {
   return (
     <div className=" bg-sky-200 rounded-lg shadow-md p-4 mb-4">
       <div className="flex items-center justify-between">
-        <div className="font-bold">{video.comment.count} 💬</div>
+        <div className="font-bold text-blue-800">
+          {video.comment.count}{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="w-4 h-4 inline-block mr-1"
+          >
+            <path d="M10 0a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm-1.4 13.4a1.6 1.6 0 1 1 2.8 0L10 11.6l4.6 4.6a1.6 1.6 0 1 1-2.8 2.8L8.4 13.4zM5 11.3c0 .6.4 1 1 1h6.7l-1.5.8H7.4c-.6 0-1-.4-1-1V5.7l1.5-.8H9.5c.6 0 1 .4 1 1zm10.4 0c0 .6-.4 1-1 1H5.3l1.5-.8h6.7c.6 0 1-.4 1-1V5.7l-1.5-.8h2.5c.6 0 1 .4 1 1z" />
+          </svg>
+        </div>
         <div>
           {!showInput ? (
             <button
