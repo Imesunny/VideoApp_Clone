@@ -1,0 +1,32 @@
+/* VideoPage.css */
+.video-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b7280;
+    color: white;
+  }
+  
+  .video-container {
+    max-width: 2xl;
+    margin: auto;
+    padding-top: 12rem; /* Adjust as needed */
+  }
+  
+  .video {
+    width: 100%;
+    height: 30rem; /* Adjust the height as needed */
+  }
+  
+  .description {
+    margin-top: 2rem;
+  }
+  
+  .author-info {
+    color: #d1d5db; /* Adjust the color as needed */
+    margin-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+  

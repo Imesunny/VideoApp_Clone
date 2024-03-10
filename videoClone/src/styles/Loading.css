@@ -1,0 +1,58 @@
+/* loading.css */
+.flex {
+    display: flex;
+  }
+  
+  .items-top {
+    align-items: flex-start;
+  }
+  
+  .gap-4 {
+    gap: 1rem;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .h-screen {
+    height: 100vh;
+  }
+  
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .h-16 {
+    height: 4rem;
+  }
+  
+  .w-16 {
+    width: 4rem;
+  }
+  
+  .border-t-2 {
+    border-top-width: 2px;
+  }
+  
+  .border-b-2 {
+    border-bottom-width: 2px;
+  }
+  
+  .border-gray-900 {
+    border-color: #111827;
+  }
+  

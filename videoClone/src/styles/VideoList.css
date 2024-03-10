@@ -1,0 +1,27 @@
+/* VideoList.css */
+.w-full {
+    width: 100%;
+  }
+  
+  .bg-gray-500 {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .gap-6 {
+    gap: 1.5rem;
+  }
+  

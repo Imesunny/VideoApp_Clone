@@ -1,0 +1,25 @@
+/* Like.css */
+.flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .text-gray-400 {
+    color: #ccc;
+  }
+  
+  .gap-8 {
+    gap: 0.5rem;
+  }
+  
+  .text-red-400 {
+    color: #dc2626;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  

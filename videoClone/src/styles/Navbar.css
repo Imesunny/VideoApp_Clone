@@ -1,0 +1,24 @@
+/* Navbar.css */
+.bg-gray-800 {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .w-[95%] {
+    width: 95%;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
