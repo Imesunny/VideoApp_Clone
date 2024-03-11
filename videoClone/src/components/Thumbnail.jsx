@@ -13,17 +13,26 @@ const Thumbnail = ({ video }) => {
   };
 
   return (
-    <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <Link key={video.postId} to={`/video/${video.postId}`}>
         <img
           src={video.submission.thumbnail}
           alt=""
-          className="w-full h-[30rem] object-cover"
+          className="w-full h-56 object-cover"
         />
       </Link>
       {isHovering && (
         <div className="absolute inset-0 w-full h-full object-cover pointer-events-none">
-          <video className="inset-0 w-full h-full object-cover" autoPlay loop muted>
+          <video
+            className="inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+          >
             <source src={video.videoUrl} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

@@ -1,8 +1,6 @@
-// VideoPage.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-// import "../styles/VideoPage.css"
 
 function VideoPage() {
   const { postId } = useParams();
@@ -27,25 +25,25 @@ function VideoPage() {
 
   if (!videoData) {
     return (
-      <div className="video-page">
+      <div className="flex items-center justify-center min-h-screen bg-black text-white">
         <div className="text-2xl">Loading...</div>
       </div>
     );
   }
 
   return (
-    <div className="video-page">
-      <div className="video-container">
-        <video className="video" controls>
-          <source src={videoData.submission.mediaUrl} type="video/mp4" />
-        </video>
-        <div className="description">
-          <h1 className="text-lg font-regular">
-            {videoData.submission.description}
-          </h1>
-          <p className="author-info">
-            Uploaded by {videoData.creator.name} @{videoData.creator.handle}
-          </p>
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 to-blue-500 text-white">
+      <div className="max-w-md w-full mx-auto">
+        <div className="relative">
+          <video className="w-full" controls>
+            <source src={videoData.submission.mediaUrl} type="video/mp4" />
+          </video>
+          <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 p-4 w-full">
+            <h1 className="text-lg font-semibold">{videoData.submission.description}</h1>
+            <p className="text-sm">
+              Uploaded by {videoData.creator.name} @{videoData.creator.handle}
+            </p>
+          </div>
         </div>
       </div>
     </div>

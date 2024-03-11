@@ -5,8 +5,8 @@ import CreatorDetails from "./CreatorDetails";
 
 const VideoDetails = ({ video, handleLike, handleComment }) => {
   return (
-    <div className="p-4">
-      <div className="flex ">
+    <div className="p-1">
+      <div className="flex">
         <CreatorImage video={video} />
         <CreatorDetails
           video={video}

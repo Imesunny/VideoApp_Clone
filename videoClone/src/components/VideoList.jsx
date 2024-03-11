@@ -50,6 +50,8 @@ function VideoList() {
     }
   };
 
+  console.log(videos, "Videos");
+
   const handlePagination = (page) => {
     setCurrentPage(page);
   };
@@ -59,10 +61,10 @@ function VideoList() {
       if (video.postId === postId) {
         const localStorageKey = `likes_${postId}`;
         let updatedLikes;
-
+  
         const currentLikes = video.likes;
         const likedStatus = localStorage.getItem(`likedStatus_${postId}`);
-
+  
         if (likedStatus === "true") {
           updatedLikes = currentLikes - 1;
           localStorage.setItem(`likedStatus_${postId}`, "false");
@@ -70,13 +72,13 @@ function VideoList() {
           updatedLikes = currentLikes + 1;
           localStorage.setItem(`likedStatus_${postId}`, "true");
         }
-
+  
         localStorage.setItem(localStorageKey, updatedLikes.toString());
         return { ...video, likes: updatedLikes };
       }
       return video;
     });
-
+  
     setVideos(updatedVideos);
   };
 
