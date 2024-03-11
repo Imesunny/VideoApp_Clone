@@ -1,12 +1,11 @@
-// Loading.jsx
 import React from "react";
 
 const Loading = () => {
   return (
-    <div className="flex items-top gap-4 justify-center h-screen">
-      <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900"></div>
-      <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900"></div>
-      <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900"></div>
+    <div className="flex items-center justify-center h-screen">
+      <div className="animate-bounce bg-blue-500 w-16 h-16 rounded-full"></div>
+      <div className="animate-bounce bg-blue-500 w-16 h-16 rounded-full ml-4"></div>
+      <div className="animate-bounce bg-blue-500 w-16 h-16 rounded-full ml-4"></div>
     </div>
   );
 };
