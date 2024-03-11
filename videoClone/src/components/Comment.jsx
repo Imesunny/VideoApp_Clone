@@ -20,7 +20,7 @@ const Comment = ({ video, handleComment }) => {
   return (
     <div className=" bg-sky-200 rounded-lg shadow-md p-4 mb-4">
       <div className="flex items-center justify-between">
-        <div className="font-bold text-blue-800">
+        <div className="font-bold text-blue-800 mr-2">
           {video.comment.count}{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
