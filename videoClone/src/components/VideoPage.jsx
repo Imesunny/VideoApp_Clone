@@ -23,9 +23,10 @@ function VideoPage() {
     fetchVideos();
   }, [postId]);
 
+  console.log(videoData);
   if (!videoData) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-black text-white">
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 to-blue-500 text-white">
         <div className="text-2xl">Loading...</div>
       </div>
     );
@@ -33,17 +34,15 @@ function VideoPage() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 to-blue-500 text-white">
-      <div className="max-w-md w-full mx-auto">
-        <div className="relative">
-          <video className="w-full" controls>
-            <source src={videoData.submission.mediaUrl} type="video/mp4" />
-          </video>
-          <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 p-4 w-full">
-            <h1 className="text-lg font-semibold">{videoData.submission.description}</h1>
-            <p className="text-sm">
-              Uploaded by {videoData.creator.name} @{videoData.creator.handle}
-            </p>
-          </div>
+      <div className="max-w-md w-full mx-auto relative">
+        <video className="w-full" controls>
+          <source src={videoData.submission.mediaUrl} type="video/mp4" />
+        </video>
+        <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 p-4 w-full">
+          <h1 className="text-lg font-semibold">{videoData.submission.description}</h1>
+          <p className="text-sm">
+            Uploaded by {videoData.creator.name} @{videoData.creator.handle}
+          </p>
         </div>
       </div>
     </div>
