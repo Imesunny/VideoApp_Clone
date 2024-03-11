@@ -43,3 +43,10 @@ Enhances user interaction with hover effects and button transitions.
 Tailwind CSS: Provides utility-first CSS classes for styling components efficiently.
 
 ## SnapShots
+![VideoApp Logo](https://github.com/Imesunny/VideoApp_Clone/blob/main/Image_top.jpeg?raw=true)
+![VideoApp Logo](https://github.com/Imesunny/VideoApp_Clone/blob/main/Image_botton.jpeg?raw=true)
+![VideoApp Logo](https://github.com/Imesunny/VideoApp_Clone/blob/main/Image_%20VideoPage.jpeg?raw=true)
+
+
+
+
