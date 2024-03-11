@@ -17,7 +17,7 @@ const VideoCard = ({ video, handleLike, handleComment }) => {
                   ${isHovered ? 'hover:shadow-xl' : ''} transition duration-200`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ width:  "80vh" }} 
+      style={{ width:  "100%" }} 
     >
       <div className="video-card">
         <Thumbnail video={video} />
