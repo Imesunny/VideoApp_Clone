@@ -42,4 +42,16 @@ Enhances user interaction with hover effects and button transitions.
 3. React Router: Enables navigation and routing within the application.
 Tailwind CSS: Provides utility-first CSS classes for styling components efficiently.
 
+<<<<<<< HEAD
 ## SnapShots
+=======
+## SnapShots
+![VideoApp Logo](https://github.com/Imesunny/VideoApp_Clone/blob/main/Image_top.jpeg?raw=true)
+
+![VideoApp Logo](https://github.com/Imesunny/VideoApp_Clone/blob/main/Image_botton.jpeg?raw=true)
+
+![VideoApp Logo](https://github.com/Imesunny/VideoApp_Clone/blob/main/Image_%20VideoPage.jpeg?raw=true)
+
+
+
+>>>>>>> e88e80436f0ea289265e30d7da029f81aae14018

@@ -35,7 +35,7 @@ const Comment = ({ video, handleComment }) => {
           {!showInput ? (
             <button
               onClick={() => setShowInput(true)}
-              className="flex items-center justify-center w-full sm:w-auto h-10 px-4 py-2 text-white bg-blue-500 rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200"
+              className="w-full sm:w-auto flex items-center justify-center h-10 px-4 py-2 text-white bg-blue-500 rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200"
             >
               <span className="mr-2">Comment</span>
               <svg
