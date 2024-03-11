@@ -27,7 +27,7 @@ function VideoPage() {
   if (!videoData) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 to-blue-500 text-white">
-        <div className="text-2xl">Loading...</div>
+        <div className="w-16 h-16 border-t-4 border-solid border-white border-t-4 rounded-full animate-spin"></div>
       </div>
     );
   }
@@ -39,7 +39,9 @@ function VideoPage() {
           <source src={videoData.submission.mediaUrl} type="video/mp4" />
         </video>
         <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 p-4 w-full">
-          <h1 className="text-lg font-semibold">{videoData.submission.description}</h1>
+          <h1 className="text-lg font-semibold">
+            {videoData.submission.description}
+          </h1>
           <p className="text-sm">
             Uploaded by {videoData.creator.name} @{videoData.creator.handle}
           </p>
