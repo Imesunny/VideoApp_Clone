@@ -2,7 +2,7 @@
 This project is a clone of a video sharing application developed as part of an assignment for hyperGo. It aims to replicate some of the core functionalities of popular video-sharing platforms.
 
 ## Features
-- Video Cards: Each video is represented by a card containing essential details such as the video thumbnail, creator information, view count etc.
+- # Video Cards: Each video is represented by a card containing essential details such as the video thumbnail, creator information, view count etc.
 
 - Likes and Comments: Users can like videos, and leave comments, with real-time updates to reflect interactions.
 
