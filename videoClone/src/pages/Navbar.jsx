@@ -1,16 +1,16 @@
 import React from "react";
 
-const Navbar = () => {
+const NewNavbar = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-500 to-pink-500 py-6">
-      <div className="w-[95%] mx-auto flex justify-between items-center">
-        <h1 className="text-white text-3xl font-bold">Welcome to Video Studio Hub</h1>
-        <div className="flex items-center space-x-4">
-          <button className="bg-white text-purple-500 py-2 px-4 rounded-md hover:bg-gray-100">
-            Login
+    <div className="bg-gradient-to-r from-blue-400 to-green-500 py-4">
+      <div className="w-[90%] mx-auto flex justify-between items-center">
+        <h1 className="text-white text-4xl font-semibold">Explore the World of Videos</h1>
+        <div className="flex items-center space-x-6">
+          <button className="bg-white text-blue-500 py-2 px-6 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition duration-300 ease-in-out">
+            Explore More
           </button>
-          <button className="bg-white text-purple-500 py-2 px-4 rounded-md hover:bg-gray-100">
-            Sign Up
+          <button className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">
+            Get Started
           </button>
         </div>
       </div>
@@ -18,4 +18,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NewNavbar;
