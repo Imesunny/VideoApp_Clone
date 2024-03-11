@@ -1,14 +1,10 @@
-/* Navbar.css */
+
 .bg-gray-800 {
     background-color: #333;
     color: #fff;
     padding: 1rem;
   }
-  
-  .w-[95%] {
-    width: 95%;
-  }
-  
+
   .text-white {
     color: #fff;
   }
